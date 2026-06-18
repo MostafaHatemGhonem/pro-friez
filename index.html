@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Friez | بوم فريت فاخر للمطاعم والمنازل</title>
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="برو فرايز نورد بطاطس بوم فريت فاخرة مقرمشة بمقاسات 7 مم، 10 مم، 12 مم وشتنك للمطاعم والمحلات والمنازل بأعلى جودة وأفضل الأسعار.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-ar">
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Pro Friez Logo" class="logo-img">
+                <span class="logo-text"><span class="logo-accent">Pro</span>Friez</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#about" data-i18n="nav-about">عن برو فرايز</a>
+                <a href="#products" data-i18n="nav-products">منتجاتنا</a>
+                <a href="#calculator" data-i18n="nav-calculator">حاسبة الطلب</a>
+                <a href="#why-us" data-i18n="nav-why-us">لماذا نحن</a>
+                <a href="#contact" data-i18n="nav-contact">اتصل بنا</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="lang-toggle" class="btn btn-outline lang-btn">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="lang-text">English</span>
+                </button>
+                <a href="https://wa.me/201096708977" class="btn btn-primary nav-cta" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span data-i18n="nav-order-now">اطلب الآن</span>
+                </a>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge" data-i18n="hero-badge">بطاطس مقرمشة ذهبية فاخرة ✨</span>
+                <h1 class="hero-title">
+                    <span data-i18n="hero-title-1">المعيار الذهبي للـ</span>
+                    <span class="text-gradient" data-i18n="hero-title-2">بوم فريت المثالي</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero-subtitle-text">
+                    نحن في برو فرايز (Pro Friez) نورد أجود أنواع البطاطس نصف المقلية والمجمدة بمقاسات 7 مم، 10 مم، 12 مم، والقطع الريفية (شتنك) للفنادق، المطاعم، السوبرماركت والمنازل.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#calculator" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-calculator"></i>
+                        <span data-i18n="hero-btn-calc">احسب طلبك الآن</span>
+                    </a>
+                    <a href="#products" class="btn btn-outline btn-lg">
+                        <span data-i18n="hero-btn-products">تصفح المقاسات</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label" data-i18n="stat-natural">طبيعية وبدون إضافات</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">&lt; 5%</span>
+                        <span class="stat-label" data-i18n="stat-oil">امتصاص أقل للزيت</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">24/7</span>
+                        <span class="stat-label" data-i18n="stat-delivery">توصيل سريع ومبرد</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <!-- 3D flipping card showing real product bags front/back -->
+                    <div class="packaging-card-3d">
+                        <div class="packaging-card-inner">
+                            <div class="packaging-card-front">
+                                <img src="assets/product_bag_front.jpg" alt="Pro Friez Package Front" class="hero-img-element">
+                                <div class="flip-hint" data-i18n="flip-hint-front">المس أو مرر لرؤية الظهر 🔄</div>
+                            </div>
+                            <div class="packaging-card-back">
+                                <img src="assets/product_bag_back.jpg" alt="Pro Friez Package Back" class="hero-img-element">
+                                <div class="flip-hint" data-i18n="flip-hint-back">المس أو مرر لرؤية الوجه 🔄</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-badge badge-1">
+                        <i class="fa-solid fa-star"></i>
+                        <div>
+                            <h4 data-i18n="badge-crispy-title">قرمشة تدوم</h4>
+                            <p data-i18n="badge-crispy-desc">تقنيات تجفيف متطورة</p>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                        <div>
+                            <h4 data-i18n="badge-wholesale-title">أسعار جملة</h4>
+                            <p data-i18n="badge-wholesale-desc">للمطاعم والمحلات</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="about-tag">من نحن</span>
+                <h2 class="section-title" data-i18n="about-title">شركاء النجاح لكل مطبخ ومطعم</h2>
+                <p class="section-desc" data-i18n="about-desc">
+                    سواء كنت تمتلك مطعماً شهيراً، محلاً لبيع المواد الغذائية، أو تبحث عن الجودة الفاخرة لعائلتك في المنزل، برو فرايز هي خيارك الأول.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon-box">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 data-i18n="about-card1-title">المطاعم والفنادق</h3>
+                    <p data-i18n="about-card1-desc">
+                        نوفر كميات تجارية بانتظام وثبات كامل في الجودة والمقاس، مما يضمن رضا زبائنك وهدر أقل في مطبخك.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon-box">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+                    <h3 data-i18n="about-card2-title">المحلات والسوبرماركت</h3>
+                    <p data-i18n="about-card2-desc">
+                        تعبئة وتغليف احترافي ومحكم يحافظ على سلامة وتجميد البطاطس ويجذب المستهلك على الرفوف.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon-box">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 data-i18n="about-card3-title">المنازل والمستهلكين</h3>
+                    <p data-i18n="about-card3-desc">
+                        استمتع ببطاطس المطاعم الفاخرة في منزلك. سهلة التحضير، سريعة، وبطعم مقرمش لا يقاوم.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Showcase Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="products-tag">مقاساتنا وقصاتنا</span>
+                <h2 class="section-title" data-i18n="products-title">اختر القصة المثالية لأطباقك</h2>
+                <p class="section-desc" data-i18n="products-desc">
+                    نوفر أربعة مقاسات مدروسة بدقة لتناسب مختلف الاستخدامات وطرق التقديم.
+                </p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1: 7mm -->
+                <div class="product-card" data-product="7mm">
+                    <div class="product-img-holder">
+                        <img src="assets/fries_7mm.png" alt="7mm French Fries" class="product-img">
+                        <span class="product-size-badge">7 mm</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod-7mm-title">بوم فريت 7 مم (Shoestring)</h3>
+                        <p class="product-flavor" data-i18n="prod-7mm-sub">الرفيعة والأكثر قرمشة</p>
+                        <p class="product-text" data-i18n="prod-7mm-desc">
+                            مثالية لمطاعم الوجبات السريعة والبرجر. تقلى بسرعة فائقة وتمنحك قرمشة رهيبة تدوم طويلاً.
+                        </p>
+                        <ul class="product-features">
+                            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="feat-crisp">قرمشة مضاعفة</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="feat-fast">قلي سريع جداً</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product 2: 10mm -->
+                <div class="product-card" data-product="10mm">
+                    <div class="product-img-holder">
+                        <img src="assets/fries_10mm.png" alt="10mm French Fries" class="product-img">
+                        <span class="product-size-badge">10 mm</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod-10mm-title">بوم فريت 10 مم (Classic)</h3>
+                        <p class="product-flavor" data-i18n="prod-10mm-sub">المعيار الكلاسيكي الذهبي</p>
+                        <p class="product-text" data-i18n="prod-10mm-desc">
+                            الحجم الكلاسيكي المفضل للجميع. يجمع بين قلب هبّار وطري وقشرة خارجية مقرمشة. ممتاز للكافيهات والعائلات.
+                        </p>
+                        <ul class="product-features">
+                            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="feat-standard">الحجم المعتمد عالمياً</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="feat-inside">قلب طري وغني</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product 3: 12mm -->
+                <div class="product-card" data-product="12mm">
+                    <div class="product-img-holder">
+                        <img src="assets/fries_12mm.png" alt="12mm French Fries" class="product-img">
+                        <span class="product-size-badge">12 mm</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod-12mm-title">بوم فريت 12 مم (Steakhouse)</h3>
+                        <p class="product-flavor" data-i18n="prod-12mm-sub">العريضة والمليئة بالنكهة</p>
+                        <p class="product-text" data-i18n="prod-12mm-desc">
+                            قصة سميكة فاخرة، مثالية للتقديم مع شرائح الستيك والأطباق الرئيسية. تحتفظ بالحرارة لفترات طويلة وتكفي لإشباع كبير.
+                        </p>
+                        <ul class="product-features">
+                            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="feat-heat">حفظ ممتاز للحرارة</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="feat-yield">إشباع ووزن ممتاز</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product 4: Shtunk -->
+                <div class="product-card" data-product="shtunk">
+                    <div class="product-img-holder">
+                        <img src="assets/fries_shtunk.png" alt="Shtunk Rustic Wedges" class="product-img">
+                        <span class="product-size-badge">Shtunk</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod-shtunk-title">بطاطس شتنك (Rustic Wedges)</h3>
+                        <p class="product-flavor" data-i18n="prod-shtunk-sub">القصة الريفية العريضة بالقشر</p>
+                        <p class="product-text" data-i18n="prod-shtunk-desc">
+                            قطع عريضة ومتموجة ذات طابع منزلي ريفي. رائعة ومميزة جداً مع التتبيل بالبهارات والأعشاب، وتقديمها كطبق جانبي فاخر.
+                        </p>
+                        <ul class="product-features">
+                            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="feat-peel">تأتي بالقشرة الطبيعية لذوق مميز</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="feat-spicy">رائعة مع التتبيل والخبز بالفرن</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator Section -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="calc-tag">احسب التكلفة</span>
+                <h2 class="section-title" data-i18n="calc-title">حاسبة الطلبات التفاعلية</h2>
+                <p class="section-desc" data-i18n="calc-desc">
+                    اختر المقاسات والكميات التي ترغب بها، وتعرف على السعر التقريبي فوراً قبل إرسال طلبك.
+                </p>
+            </div>
+
+            <div class="calculator-grid">
+                <!-- Calculator Inputs Form -->
+                <div class="calculator-inputs-card">
+                    <h3 class="card-subtitle" data-i18n="calc-subtitle">قائمة الأسعار القياسية:</h3>
+                    <div class="pricing-standards">
+                        <div class="pricing-standard-item">
+                            <span class="pricing-label" data-i18n="calc-package-1">عبوة 1 كجم</span>
+                            <span class="pricing-value">60 EGP</span>
+                        </div>
+                        <div class="pricing-standard-item">
+                            <span class="pricing-label" data-i18n="calc-package-25">عبوة 2.5 كجم</span>
+                            <span class="pricing-value">145 EGP</span>
+                        </div>
+                    </div>
+
+                    <p class="bulk-alert-text" data-i18n="calc-bulk-tip">
+                        💡 هل تبحث عن طلبية كبيرة أو أسعار جملة للمطاعم والموزعين؟ تواصل معنا عبر الواتساب مباشرة للتفاوض على الخصم المتاح!
+                    </p>
+
+                    <form id="calc-form">
+                        <!-- 7mm inputs -->
+                        <div class="calc-row">
+                            <div class="calc-product-header">
+                                <span class="calc-product-badge">7 mm</span>
+                                <h4 data-i18n="prod-7mm-title">بوم فريت 7 مم (Shoestring)</h4>
+                            </div>
+                            <div class="calc-inputs-group">
+                                <div class="input-number-wrapper">
+                                    <label data-i18n="qty-1kg">عبوة 1 كجم (60 ج.م)</label>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-prod="7mm" data-size="1k">-</button>
+                                        <input type="number" id="qty-7mm-1k" min="0" value="0" class="qty-input" data-prod="7mm" data-size="1k">
+                                        <button type="button" class="qty-btn plus" data-prod="7mm" data-size="1k">+</button>
+                                    </div>
+                                </div>
+                                <div class="input-number-wrapper">
+                                    <label data-i18n="qty-25kg">عبوة 2.5 كجم (145 ج.م)</label>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-prod="7mm" data-size="25k">-</button>
+                                        <input type="number" id="qty-7mm-25k" min="0" value="0" class="qty-input" data-prod="7mm" data-size="25k">
+                                        <button type="button" class="qty-btn plus" data-prod="7mm" data-size="25k">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 10mm inputs -->
+                        <div class="calc-row">
+                            <div class="calc-product-header">
+                                <span class="calc-product-badge">10 mm</span>
+                                <h4 data-i18n="prod-10mm-title">بوم فريت 10 مم (Classic)</h4>
+                            </div>
+                            <div class="calc-inputs-group">
+                                <div class="input-number-wrapper">
+                                    <label data-i18n="qty-1kg">عبوة 1 كجم (60 ج.م)</label>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-prod="10mm" data-size="1k">-</button>
+                                        <input type="number" id="qty-10mm-1k" min="0" value="0" class="qty-input" data-prod="10mm" data-size="1k">
+                                        <button type="button" class="qty-btn plus" data-prod="10mm" data-size="1k">+</button>
+                                    </div>
+                                </div>
+                                <div class="input-number-wrapper">
+                                    <label data-i18n="qty-25kg">عبوة 2.5 كجم (145 ج.م)</label>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-prod="10mm" data-size="25k">-</button>
+                                        <input type="number" id="qty-10mm-25k" min="0" value="0" class="qty-input" data-prod="10mm" data-size="25k">
+                                        <button type="button" class="qty-btn plus" data-prod="10mm" data-size="25k">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 12mm inputs -->
+                        <div class="calc-row">
+                            <div class="calc-product-header">
+                                <span class="calc-product-badge">12 mm</span>
+                                <h4 data-i18n="prod-12mm-title">بوم فريت 12 مم (Steakhouse)</h4>
+                            </div>
+                            <div class="calc-inputs-group">
+                                <div class="input-number-wrapper">
+                                    <label data-i18n="qty-1kg">عبوة 1 كجم (60 ج.م)</label>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-prod="12mm" data-size="1k">-</button>
+                                        <input type="number" id="qty-12mm-1k" min="0" value="0" class="qty-input" data-prod="12mm" data-size="1k">
+                                        <button type="button" class="qty-btn plus" data-prod="12mm" data-size="1k">+</button>
+                                    </div>
+                                </div>
+                                <div class="input-number-wrapper">
+                                    <label data-i18n="qty-25kg">عبوة 2.5 كجم (145 ج.م)</label>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-prod="12mm" data-size="25k">-</button>
+                                        <input type="number" id="qty-12mm-25k" min="0" value="0" class="qty-input" data-prod="12mm" data-size="25k">
+                                        <button type="button" class="qty-btn plus" data-prod="12mm" data-size="25k">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Shtunk inputs -->
+                        <div class="calc-row">
+                            <div class="calc-product-header">
+                                <span class="calc-product-badge">Shtunk</span>
+                                <h4 data-i18n="prod-shtunk-title">بطاطس شتنك (Rustic Wedges)</h4>
+                            </div>
+                            <div class="calc-inputs-group">
+                                <div class="input-number-wrapper">
+                                    <label data-i18n="qty-1kg">عبوة 1 كجم (60 ج.م)</label>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-prod="shtunk" data-size="1k">-</button>
+                                        <input type="number" id="qty-shtunk-1k" min="0" value="0" class="qty-input" data-prod="shtunk" data-size="1k">
+                                        <button type="button" class="qty-btn plus" data-prod="shtunk" data-size="1k">+</button>
+                                    </div>
+                                </div>
+                                <div class="input-number-wrapper">
+                                    <label data-i18n="qty-25kg">عبوة 2.5 كجم (145 ج.م)</label>
+                                    <div class="qty-control">
+                                        <button type="button" class="qty-btn minus" data-prod="shtunk" data-size="25k">-</button>
+                                        <input type="number" id="qty-shtunk-25k" min="0" value="0" class="qty-input" data-prod="shtunk" data-size="25k">
+                                        <button type="button" class="qty-btn plus" data-prod="shtunk" data-size="25k">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Calculator Output / Summary Card -->
+                <div class="calculator-summary-card">
+                    <h3 data-i18n="summary-title">ملخص الطلب المبدئي</h3>
+                    <hr class="summary-divider">
+                    
+                    <div id="summary-empty" class="summary-empty">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p data-i18n="summary-empty-msg">لم تقم بإضافة أي منتجات بعد. قم بزيادة الكميات لعرض الفاتورة.</p>
+                    </div>
+
+                    <div id="summary-content" class="summary-content hidden">
+                        <!-- Dynamic list will be rendered here -->
+                        <div id="summary-items" class="summary-items"></div>
+                        
+                        <hr class="summary-divider">
+
+                        <!-- Totals -->
+                        <div class="summary-total-row">
+                            <span data-i18n="summary-total-weight">الوزن الإجمالي:</span>
+                            <span id="total-weight" class="total-value">0 كجم</span>
+                        </div>
+                        <div class="summary-total-row">
+                            <span data-i18n="summary-subtotal">السعر الإجمالي (قبل الخصم):</span>
+                            <span id="subtotal-price" class="total-value">0 EGP</span>
+                        </div>
+
+                        <!-- Buyer Type Selector for custom info -->
+                        <div class="buyer-type-select-wrapper">
+                            <label for="buyer-type" data-i18n="buyer-type-label">نوع المشتري:</label>
+                            <select id="buyer-type" class="buyer-select">
+                                <option value="consumer" data-i18n="buyer-opt-consumer">مستهلك منزلي</option>
+                                <option value="restaurant" data-i18n="buyer-opt-restaurant">مطعم / كافيه</option>
+                                <option value="shop" data-i18n="buyer-opt-shop">محل / سوبرماركت</option>
+                            </select>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button id="send-whatsapp-btn" class="btn btn-success btn-block btn-lg">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span data-i18n="send-whatsapp">تأكيد الطلب والتفاوض عبر الواتساب</span>
+                            </button>
+                        </div>
+                        <p class="whatsapp-note" data-i18n="whatsapp-note">
+                            * سيتم نقلك إلى واتساب لإرسال رسالة منسقة بطلبك للتفاوض على الخصومات والتوصيل.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Quality Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="why-tag">مميزاتنا</span>
+                <h2 class="section-title" data-i18n="why-title">لماذا يفضل الطهاة وأصحاب المطاعم برو فرايز؟</h2>
+                <p class="section-desc" data-i18n="why-desc">
+                    نحن نهتم بالتفاصيل الدقيقة لنمنحك بطاطس مثالية من المزرعة وحتى المقلاة.
+                </p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 data-i18n="why-title1">أفضل ثمار البطاطس</h3>
+                    <p data-i18n="why-desc1">
+                        نستخدم حصرياً بطاطس عالية المادة الجافة (High Solid Content) لضمان قلب كريمي وقشرة مقرمشة.
+                    </p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-droplet-slash"></i>
+                    </div>
+                    <h3 data-i18n="why-title2">امتصاص أقل للزيت</h3>
+                    <p data-i18n="why-desc2">
+                        بفضل تقنية القلي التمهيدي السريع والتجفيف الحراري، تستهلك بطاطسنا زيت أقل بنسبة تصل إلى 20%.
+                    </p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <h3 data-i18n="why-title3">تجميد فوري سريع IQF</h3>
+                    <p data-i18n="why-desc3">
+                        نجمد البطاطس بشكل فردي وصادم لضمان عدم تكتلها داخل العبوات والاحتفاظ بكامل طعمها الطازج.
+                    </p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 data-i18n="why-title4">خدمة توريد مستدامة</h3>
+                    <p data-i18n="why-desc4">
+                        لا داعي للقلق بشأن انقطاع المخزون. نلتزم بجداول توريد دقيقة بسيارات مجهزة ومبردة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact-tag">تواصل معنا</span>
+                <h2 class="section-title" data-i18n="contact-title">جاهزون لتلبية طلباتك في أي وقت</h2>
+                <p class="section-desc" data-i18n="contact-desc">
+                    راسلنا للاستفسار عن أسعار الكميات الكبيرة وعروض الشراكة الدائمة للمطاعم وموزعي الجملة.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3 data-i18n="contact-info-title">معلومات الاتصال</h3>
+                    <p data-i18n="contact-info-desc">يسعدنا اتصالك بنا أو زيارتنا في أي وقت لمناقشة شراكات العمل.</p>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4 data-i18n="contact-phone">الهاتف والواتساب</h4>
+                                <a href="tel:+201096708977" dir="ltr">+20 109 670 8977</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4 data-i18n="contact-email">البريد الإلكتروني</h4>
+                                <a href="mailto:info@profriez.com">info@profriez.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4 data-i18n="contact-location">الموقع</h4>
+                                <p data-i18n="contact-loc-val">جمهورية مصر العربية، القاهرة / الجيزة</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/201096708977" target="_blank" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <form id="contact-form" action="#">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="form-name" data-i18n="form-name">الاسم الكريم</label>
+                                <input type="text" id="form-name" required placeholder="أحمد محمد">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone" data-i18n="form-phone">رقم الهاتف</label>
+                                <input type="tel" id="form-phone" required placeholder="01xxxxxxxxx">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email" data-i18n="form-email">البريد الإلكتروني (اختياري)</label>
+                            <input type="email" id="form-email" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message" data-i18n="form-message">الرسالة أو الاستفسار</label>
+                            <textarea id="form-message" rows="5" required placeholder="أنا صاحب مطعم وأريد الاستفسار عن توريد طن أسبوعياً من مقاس 10 مم..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" id="contact-submit-btn">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            <span data-i18n="form-send">إرسال الاستفسار</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/logo.png" alt="Pro Friez Logo" class="logo-img">
+                    <span class="logo-text"><span class="logo-accent">Pro</span>Friez</span>
+                </a>
+                <p data-i18n="footer-about">
+                    المورد الرئيسي للبطاطس نصف المقلية الفاخرة المجهزة خصيصاً للمطاعم الكبرى، الفنادق، وموزعي التجزئة والمنازل. قرمشة لا مثيل لها وطعم طبيعي 100%.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 data-i18n="footer-links-title">روابط سريعة</h4>
+                <a href="#about" data-i18n="nav-about">عن برو فرايز</a>
+                <a href="#products" data-i18n="nav-products">منتجاتنا</a>
+                <a href="#calculator" data-i18n="nav-calculator">حاسبة الطلب</a>
+                <a href="#contact" data-i18n="nav-contact">اتصل بنا</a>
+            </div>
+
+            <div class="footer-products">
+                <h4 data-i18n="footer-prod-title">منتجاتنا</h4>
+                <ul>
+                    <li data-i18n="prod-7mm-title">بوم فريت 7 مم</li>
+                    <li data-i18n="prod-10mm-title">بوم فريت 10 مم</li>
+                    <li data-i18n="prod-12mm-title">بوم فريت 12 مم</li>
+                    <li data-i18n="prod-shtunk-title">بطاطس شتنك ريفية</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Pro Friez. All Rights Reserved. Designed for Excellence.</p>
+                <p data-i18n="footer-rights">جميع الحقوق محفوظة لشركة برو فرايز © 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>

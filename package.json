@@ -1,0 +1,17 @@
+{
+  "name": "pro-friez",
+  "version": "1.0.0",
+  "description": "Premium landing page for Pro Friez potato supply business.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y http-server -p 3000",
+    "dev": "npx -y http-server -p 3000"
+  },
+  "keywords": [
+    "pommes-frites",
+    "potato",
+    "pro-friez"
+  ],
+  "author": "Pro Friez",
+  "license": "ISC"
+}
