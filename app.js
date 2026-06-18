@@ -103,7 +103,9 @@ const translations = {
         "footer-prod-title": "منتجاتنا",
         "footer-rights": "جميع الحقوق محفوظة لشركة برو فرايز © 2026",
         "flip-hint-front": "المس أو مرر لرؤية الظهر 🔄",
-        "flip-hint-back": "المس أو مرر لرؤية الوجه 🔄"
+        "flip-hint-back": "المس أو مرر لرؤية الوجه 🔄",
+        "toggle-1kg": "عبوة 1 كجم",
+        "toggle-25kg": "عبوة 2.5 كجم"
     },
     en: {
         "nav-about": "About Us",
@@ -206,7 +208,9 @@ const translations = {
         "footer-prod-title": "Our Cuts",
         "footer-rights": "All Rights Reserved to Pro Friez © 2026",
         "flip-hint-front": "Tap or hover to view back 🔄",
-        "flip-hint-back": "Tap or hover to view front 🔄"
+        "flip-hint-back": "Tap or hover to view front 🔄",
+        "toggle-1kg": "1 Kg Bag",
+        "toggle-25kg": "2.5 Kg Bag"
     }
 };
 
@@ -586,6 +590,43 @@ document.addEventListener("DOMContentLoaded", () => {
     if (packagingCard) {
         packagingCard.addEventListener("click", () => {
             packagingCard.classList.toggle("flipped");
+        });
+    }
+
+    // Package Bag Weight Switcher logic
+    const toggleBtns = document.querySelectorAll(".package-toggle-btn");
+    const cardInner = document.querySelector(".packaging-card-inner");
+    const frontImg = document.querySelector(".packaging-card-front img");
+    const backImg = document.querySelector(".packaging-card-back img");
+
+    if (toggleBtns.length > 0 && cardInner && frontImg && backImg) {
+        toggleBtns.forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                const targetBtn = e.currentTarget;
+                if (targetBtn.classList.contains("active")) return;
+
+                // Update active state in UI
+                toggleBtns.forEach(b => b.classList.remove("active"));
+                targetBtn.classList.add("active");
+
+                const size = targetBtn.getAttribute("data-size");
+                
+                // Add class to trigger premium transition (fade + scale down)
+                cardInner.classList.add("switching");
+
+                setTimeout(() => {
+                    if (size === "1k") {
+                        frontImg.src = "assets/product_bag_front.jpg";
+                        backImg.src = "assets/product_bag_back.jpg";
+                    } else if (size === "25k") {
+                        frontImg.src = "assets/product_bag_front_2,5.png";
+                        backImg.src = "assets/product_bag_back_2,5.png";
+                    }
+                    
+                    // Remove switching class after updating paths (allowing it to fade back in)
+                    cardInner.classList.remove("switching");
+                }, 300);
+            });
         });
     }
 });
