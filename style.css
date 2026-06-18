@@ -1058,6 +1058,9 @@ body.lang-ar .summary-items {
     padding: 32px;
     border-radius: 16px;
     transition: all var(--transition-normal);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .why-item:hover {
